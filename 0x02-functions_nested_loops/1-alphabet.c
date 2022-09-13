@@ -1,9 +1,9 @@
 #include "main.h"
 /**
- * main - entry point
+ * print_alphabet - prints alphabet to terminal
  *
- * description: Write a function that prints the alphabet,
- * in lowercase, followed by a new line.
+ *  Description: Prints the letters of the english alphabet
+ *   in lowercase to the terminal.
  *  Return: void
  */
 void print_alphabet(void)
