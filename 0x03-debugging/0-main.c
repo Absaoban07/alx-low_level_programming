@@ -7,7 +7,7 @@ void positive_or_negative(int i)
 int n;
 
 srand(time(0));
-n = i
+n = i;
 if (n > 0)
 {
 printf("%d is positive\n", n);
