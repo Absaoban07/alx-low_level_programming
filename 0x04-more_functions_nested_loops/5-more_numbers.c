@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "main.h"
 /**
  * more_numbers - prints numbers 10 times
@@ -8,21 +9,23 @@
  */
 void more_numbers(void)
 {
-char n, c;
-int i = 0;
-while (i < 10)
+int times;
+int n;
+for (times = 0; times < 10; times++)
 {
-for (n = 0; n <= 14; n++)
+n = 0;
+while (n < 15)
 {
-c = n;
-if (n > 9)
+int curr;
+curr = n;
+if (curr / 10)
 {
-_putchar('');
-c = n % 10;
+putchar('0' + (curr / 10));
+curr = curr % 10;
 }
-_putchar('0' + c);
+putchar('0' + curr);
+n++;
 }
-_putchar('\n');
-i++;
+putchar('\n');
 }
 }

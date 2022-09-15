@@ -8,6 +8,13 @@
  *  form a line on the screen.
  *  Return: Void
  */
-void print_line(int n);
+void print_line(int n)
 {
-
+int a = 0;
+while (a < n && n > 0)
+{
+putchar('_');
+a++;
+}
+putchar('\n');
+}
