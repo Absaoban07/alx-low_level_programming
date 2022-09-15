@@ -10,12 +10,19 @@
 void print_most_numbers(void)
 {
 int n;
-for (n = 48; n < 58; n++)
+n = 0;
+while (n < 10)
 {
-if ((n == 50) || (n == 52))
+if (n == 2 || n == 4)
 {
+n++;
 continue;
 }
-putchar(n);
+else
+{
+putchar('0' + n);
 }
+n++;
+}
+putchar('\n');
 }
