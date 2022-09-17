@@ -7,24 +7,24 @@
  */
 void print_triangle(int size)
 {
-	int i = 1, ii;
-		while (i <= size && size > 0)
+	int i, ii;
+		if (size > 0)
+	{
+		for (i = 1; i <= size; i++)
 		{
-			ii = 0;
-			while (ii < size - i)
+			for ((ii = size - i); ii > '0'; ii--)
 			{
 				putchar(' ');
-					i++;
 			}
-			ii = 0;
-			while (ii < i)
+			for (ii = 0; ii < i; ii++)
 			{
 				putchar('#');
-				ii++;
+			}
+			if (i == size)
+			{
+				continue;
 			}
 			putchar('\n');
-				i++;
 		}
-	if (i == 1)
-		putchar('\n');
+	}
 }
