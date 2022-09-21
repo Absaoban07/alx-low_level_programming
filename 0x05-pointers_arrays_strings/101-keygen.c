@@ -8,26 +8,16 @@
 
 int main(void)
 {
-int ascii = 2772, i = 0, j, random;
-char password[100];
-time_t t;
-rand((int) time(&t));
-while (ascii > 126)
+int main(void)
+char c;
+int x;
+srand(time(0));
+while (x <= 2645)
 {
-random = rand() % 126;
-password[i] = random;
-ascii -= random;
-i++;
+c = rand() % 128;
+x += c;
+putchar(c);
 }
-if (ascii > 0)
-password[i] = ascii;
-else
-{
-i--;
-}
-for (j = 0; j <= i; j++)
-{
-printf("%c", password[j]);
-}
+putchar(2772 - x);
 return (0);
 }
