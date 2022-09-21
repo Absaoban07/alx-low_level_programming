@@ -8,7 +8,6 @@
 
 int main(void)
 {
-int main(void)
 char c;
 int x;
 srand(time(0));
