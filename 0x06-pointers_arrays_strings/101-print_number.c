@@ -14,7 +14,7 @@ unsigned int num;
 num = n;
 if (n < 0)
 {
-_putchar(45);
+putchar(45);
 num = -n;
 }
 if (num / 10)
