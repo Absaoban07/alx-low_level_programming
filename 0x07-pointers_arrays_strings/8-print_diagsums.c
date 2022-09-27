@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "main.h"
 /**
-*_print_diagsums - print sums  of two diagonals of a square matrix.
+*print_diagsums - print sums  of two diagonals of a square matrix.
 *@a: matrix
 *@size: size of matrix.
 */
@@ -13,12 +13,12 @@ int r;
 int i;
 for (r = 0; r < size; r++)
 {
-i = (r * size) +r;
+i = (r * size) + r;
 ds1 += a[i];
 }
 for (r = 1; r <= size; r++)
 {
-i = (r * size) -r;
+i = (r * size) - r;
 ds2 += a[i];
 }
 printf("%d %d\n", ds1, ds2);
