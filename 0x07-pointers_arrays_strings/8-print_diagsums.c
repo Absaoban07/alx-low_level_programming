@@ -7,19 +7,19 @@
 */
 void print_diagsums(int *a, int size)
 {
-int ds1 = 0;
-int ds2 = 0;
-int r;
-int i;
-for (r = 0; r < size; r++)
+int i = 0;
+int j = size - 1;
+int sum1 = 0;
+int sum2 = 0;
+while (i <= (size * size))
 {
-i = (r * size) + r;
-ds1 += a[i];
+sum1 = sum1 + a[i];
+i = i + size + 1;
 }
-for (r = 1; r <= size; r++)
+while (j < (size * size - 1))
 {
-i = (r * size) - r;
-ds2 += a[i];
+sum2 += a[j];
+j = j + size - 1;
 }
-printf("%d %d\n", ds1, ds2);
+printf("%d, %d\n", sum1, sum2);
 }
