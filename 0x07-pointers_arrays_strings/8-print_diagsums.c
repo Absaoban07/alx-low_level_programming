@@ -7,18 +7,18 @@
 */
 void print_diagsums(int *a, int size)
 {
-int ds1;
-int ds2;
-int r, c;
+int ds1 = 0;
+int ds2 = 0;
+int r;
 int i;
 for (r = 0; r < size; r++)
 {
 i = (r * size) +r;
 ds1 += a[i];
 }
-for (c = 1; c <= size; c++)
+for (r = 1; c <= size; r++)
 {
-i = (c * size) -c;
+i = (r * size) -r;
 ds2 += a[i];
 }
 printf("%d %d\n", ds1, ds2);
