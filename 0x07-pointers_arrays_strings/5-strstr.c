@@ -3,7 +3,7 @@
 /**
  * _strstr - locate or find a substring
  * @haystack: The longer and full string
- * @needle: that target substring to search 
+ * @needle: that target substring to search
  * Return: pointer to beginning to the located substring.
  */
 char *_strstr(char *haystack, char *needle)
@@ -22,12 +22,12 @@ while (needle[j] != '\0')
 {
 if (haystack[x] == needle[j])
 x++, j++;
-else 
+else
 break;
 }
 if (needle[j] == '\0')
 {
-return (haystack +i);
+return (haystack + i);
 }
 }
 i++;
