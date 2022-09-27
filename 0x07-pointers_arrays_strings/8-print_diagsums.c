@@ -16,7 +16,7 @@ for (r = 0; r < size; r++)
 i = (r * size) +r;
 ds1 += a[i];
 }
-for (r = 1; c <= size; r++)
+for (r = 1; r <= size; r++)
 {
 i = (r * size) -r;
 ds2 += a[i];
