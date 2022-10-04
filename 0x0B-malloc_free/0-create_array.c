@@ -22,12 +22,12 @@ char *create_array(unsigned int size, char c)
 	}
 	else
 	{
-		postn = 0
+		postn = 0;
 			while (postn < size)
 			{
 				*(strge + postn) = c;
 				postn++;
 			}
-		return (strge)
+		return (strge);
 	}
 }
