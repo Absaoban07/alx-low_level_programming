@@ -6,7 +6,7 @@
  *@b: integer variable which hold the memory size
  *Return: 0 if succesful
  */
-void malloc_checked(unsigned int b)
+void *malloc_checked(unsigned int b)
 {
 void *ptr;
 ptr = malloc(b);
