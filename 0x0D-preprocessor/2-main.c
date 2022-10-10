@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - some program.compilitation take into 
+ * main - some program.compilitation take into
  * consideration the main.c file before compiling.
  * Return: void
  */
