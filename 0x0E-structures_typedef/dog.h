@@ -1,5 +1,5 @@
-#ifndef DOG.H
-#define DOG.H
+#ifndef DOG_H
+#define DOG_H
 
 /**
  * struct dog - in this program we created a struct
@@ -15,7 +15,9 @@ char *name;
 float age;
 char *owner;
 };
-
+/**
+ * free_dog - a function that frees the dog.
+ */
 typedef struct dog dog_t;
 void init_dog(struct dog *d, char *name, float age, char *owner);
 void print_dog(struct dog *d);
