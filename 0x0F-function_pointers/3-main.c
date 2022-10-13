@@ -8,11 +8,11 @@
  * Return: 0(succcessful)
  */
 
-int main(argc, char *argv[])
+int main(int argc, char *argv[])
 {
 	int arg1, arg2, result;
 	char o;
-	int (*fun)(int, int);
+	int (*func)(int, int);
 
 	if (argc != 4)
 	{
@@ -22,7 +22,7 @@ int main(argc, char *argv[])
 	arg1 = atoi(argv[1]);
 	arg2 = atoi(argv[3]);
 
-	fun = get_op_func(argv[2]);
+	func = get_op_func(argv[2]);
 
 	if (!func)
 	{
