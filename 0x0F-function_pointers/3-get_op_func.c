@@ -25,6 +25,7 @@ while (ops[i].op != NULL)
 {
 if (strcmp(s, ops[i].op) == 0)
 break;
+i++;
 }
 return (ops[i].f);
 }
