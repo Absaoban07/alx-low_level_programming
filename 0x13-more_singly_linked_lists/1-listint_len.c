@@ -12,5 +12,5 @@ while (h)
 nodenum++;
 h = h->next;
 }
-return (nodenum)
+return (nodenum);
 }
