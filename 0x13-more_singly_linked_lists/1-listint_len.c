@@ -6,11 +6,11 @@
  */
 size_t listint_len(const listint_t *h)
 {
-	size_t nodenum = 0;
-	while (h)
-	{
-		nodenum++;
-		h = h->next;
-	}
-	return (nodenum)
+size_t nodenum = 0;
+while (h)
+{
+nodenum++;
+h = h->next;
+}
+return (nodenum)
 }
