@@ -79,9 +79,9 @@ return (0);
 }
 
  /**
- * init - initializes a string
+ * init - initialise string
  * @str: sting to initialize
- * @l: length of strinf
+ * @l: length of string
  * Return: void
  */
 
